@@ -1,0 +1,60 @@
+running pipeline at 28/10/2024  7:54:25.12  
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+pipeline completed at 28/10/2024  7:54:25.13  
+ 
+running pipeline at 28/10/2024  7:55:25.07  
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+pipeline completed at 28/10/2024  7:55:25.08  
+ 
+running pipeline at 28/10/2024  8:13:01.11  
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+pipeline completed at 28/10/2024  8:13:01.12  
+ 
+running pipeline at 28/10/2024  8:22:01.06  
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+pipeline completed at 28/10/2024  8:22:01.07  
+ 
+running pipeline at 28/10/2024  8:26:01.07  
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+pipeline completed at 28/10/2024  8:26:01.29  
+ 
+running pipeline at 28/10/2024  8:43:01.10 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+pipeline completed at 28/10/2024  8:43:01.22 
+ 
+running pipeline at 28/10/2024  8:46:00.06 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+pipeline completed at 28/10/2024  8:46:00.17 
+ 
+running pipeline at 28/10/2024  8:53:07.10  
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+pipeline completed at 28/10/2024  8:53:07.11  
+ 
+running pipeline at 28/10/2024  9:01:07.08  
+pipeline completed at 28/10/2024  9:01:09.84  
+ 
+running pipeline at 28/10/2024  9:06:00.07  
+The system cannot find the path specified.
+pipeline completed at 28/10/2024  9:06:00.08  
+ 
+running pipeline at 28/10/2024  9:09:00.09  
+'C:\Program' is not recognized as an internal or external command,
+operable program or batch file.
+pipeline completed at 28/10/2024  9:09:00.10  
+ 
+running pipeline at 28/10/2024  9:10:00.11 
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Manage App Execution Aliases.
+pipeline completed at 28/10/2024  9:10:00.25 
+ 
+running pipeline at 28/10/2024  9:12:00.09 
+14804 successfully Extracted
+14804 rows loaded to staging successfully
+stored procedure executed
+pipeline executed successfully for 2015-01-07
+pipeline completed at 28/10/2024  9:12:05.24 
+ 
