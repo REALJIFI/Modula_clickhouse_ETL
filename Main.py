@@ -3,14 +3,28 @@ from Extract import fetch_data
 from load import load_csv_to_postgres
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import text
-query = '''
-        select pickup_date,vendor_id, passenger_count,trip_distance,fare_amount,payment_type, tip_amount  
-        from tripdata
-        where year(pickup_date) = 2015 and month(pickup_date) = 1 and  dayofmonth(pickup_date) = 2
-        '''
+from datetime import datetime, timedelta
 
 client = get_client()
 engine = get_postgres_engine()
+
+### modification for getting max_date from staging table
+# this code will check the last loaded date before running a new date in the pipeline
+
+session = sessionmaker(bind=engine)
+session =session()
+result = session.execute(text('select max(pickup_date) from "STG".tripdata'))
+max_date = result.fetchone()[0] 
+session.close()
+
+## getting the new date
+new_date = (datetime.strptime(max_date, '%Y-%m-%d') + timedelta(days=1)).date()
+
+query = f'''
+        select pickup_date,vendor_id, passenger_count,trip_distance,fare_amount,payment_type, tip_amount  
+        from tripdata
+        where pickup_date = toDate('{max_date}') + 1
+        '''
 
 
 def main():
@@ -41,7 +55,7 @@ def main():
 
     print('stored procedure executed')
 
-    print('pipeline executed successfully')
+    print(f'pipeline executed successfully for {new_date}')
 
 if __name__ == '__main__':
     main()
